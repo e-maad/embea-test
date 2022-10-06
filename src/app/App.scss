@@ -1,0 +1,23 @@
+.app {
+  padding: 0 48px;
+  margin: auto;
+
+  &-content {
+    padding-top: 112px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .app {
+    padding: 0px 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    padding: 0px;
+  }
+  .app-content {
+    padding-top: 64px;
+  }
+}

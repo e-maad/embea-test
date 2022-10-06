@@ -1,0 +1,32 @@
+.package-selector {
+  &-container {
+    display: flex;
+    flex-direction: row;
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 48px;
+    gap: 32px;
+    width: calc(43% - 95px);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .package-selector-right {
+    width: calc(100% - 48px);
+    flex-direction: row;
+    background: #f2f4fe;
+    padding-bottom: 16px;
+    left: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .package-selector-right {
+    width: 100%;
+    left: 0px;
+    padding-bottom: 0px;
+  }
+}

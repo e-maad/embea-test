@@ -1,0 +1,48 @@
+.payment-schedule {
+  border: 1px solid rgba(41, 13, 77, 0.4);
+  flex: 1;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 16px 16px 20px 16px;
+  color: rgba(41, 13, 77, 0.7);
+  cursor: pointer;
+
+  &-container {
+    border-top: 1px dashed rgba(41, 13, 77, 0.15);
+    padding-top: 24px;
+    & > h2 {
+      margin-bottom: 24px;
+    }
+  }
+  &s {
+    display: flex;
+    flex-direction: row;
+  }
+  &:nth-child(odd) {
+    margin-right: 16px;
+  }
+  &-price {
+    color: rgba(41, 13, 77, 0.4);
+    font-size: 18px;
+    line-height: 150%;
+  }
+  &-radio {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  & > h2 {
+    margin-top: 8px;
+  }
+  &.selected {
+    background-color: rgba(124, 143, 241, 0.1);
+    & h2 {
+      color: #290d4d;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .payment-schedule-price {
+    font-size: 16px;
+  }
+}

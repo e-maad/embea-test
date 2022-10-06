@@ -1,0 +1,35 @@
+.tooltip {
+  position: relative;
+
+  & .tooltiptext {
+    visibility: hidden;
+    background-color: white;
+    color: #290d4d;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 5px 1px 5px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 4px 12px rgba(30, 35, 66, 0.2);
+    width: max-content;
+    max-width: 200px;
+    cursor: pointer;
+    top: -15%;
+    left: 22px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px px;
+      left: -10px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent white transparent transparent;
+    }
+  }
+
+  &:active .tooltiptext,
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}

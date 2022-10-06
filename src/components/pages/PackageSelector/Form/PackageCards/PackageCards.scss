@@ -1,0 +1,81 @@
+.package-card {
+  padding: 16px 24px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 12px rgba(30, 35, 66, 0.25);
+  flex: 50%;
+  margin-right: 16px;
+  cursor: pointer;
+
+  &s {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 0px;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &.selected {
+    background: linear-gradient(267.3deg, #7c8eef 0%, #6d6cd0 100.29%);
+  }
+  &-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  &-header {
+    color: #7c8ff1;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    fill: #7c8ff1;
+    padding-top: 3px;
+  }
+  &-details {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: rgba(41, 13, 77, 0.7);
+    margin-top: 5px;
+  }
+  &.selected > .package-card-header {
+    color: #ffffff;
+  }
+  &.selected > .package-card-details {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .package-card {
+    min-width: 75%;
+    padding: 16px 24px;
+    &-heading {
+      font-size: 14px;
+    }
+    &-details {
+      font-size: 16px;
+    }
+    &s {
+      overflow: scroll;
+      padding: 12px 24px;
+      width: 100vw;
+      margin-left: -24px;
+      margin-right: -24px;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+
+      &::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+    }
+  }
+}

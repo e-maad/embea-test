@@ -1,0 +1,24 @@
+.button {
+  font-family: "Founders Grotesk";
+  border: 1px solid #c59247;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
+  height: 52px;
+  padding: 0px;
+  padding-top: 10px;
+  cursor: pointer;
+
+  &.inverted {
+    background-color: white;
+    color: #c59247;
+  }
+
+  &.normal {
+    background-color: #c59247;
+    color: white;
+  }
+}
