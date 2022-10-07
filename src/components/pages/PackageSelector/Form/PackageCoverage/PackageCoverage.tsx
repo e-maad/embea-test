@@ -16,7 +16,7 @@ export default function PackageCoverage() {
     <div className="package-coverage-container">
       <div className="package-coverage-content">
         <div className="package-coverage-content-header">Coverage Amount</div>
-        <div className="package-coverage-price">
+        <div className="package-coverage-amount" data-testid="Coverage-Amount">
           {formatAmount(amount, { maximumSignificantDigits: 3 })}
         </div>
       </div>
@@ -29,6 +29,7 @@ export default function PackageCoverage() {
           className={`package-coverage-stepper-btn left${
             amount <= minCoverageAmount ? " disabled" : ""
           }`}
+          data-testid="PackageCoverage-Minus"
         >
           <Minus />
         </button>
@@ -40,6 +41,7 @@ export default function PackageCoverage() {
           className={`package-coverage-stepper-btn right${
             amount >= maxCoverageAmount ? " disabled" : ""
           }`}
+          data-testid="PackageCoverage-Plus"
         >
           <Plus />
         </button>

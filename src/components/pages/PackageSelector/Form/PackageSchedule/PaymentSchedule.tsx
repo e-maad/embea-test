@@ -17,6 +17,7 @@ export default function PaymentSchedule({
       className={`payment-schedule${
         paymentSchedule.id === selectedId ? " selected" : ""
       }`}
+      data-testid={`PaymentSchedule-${paymentSchedule.id}`}
     >
       <div className="payment-schedule-radio">
         <Radio checked={paymentSchedule.id === selectedId} />

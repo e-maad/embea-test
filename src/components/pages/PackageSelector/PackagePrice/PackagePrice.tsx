@@ -17,7 +17,7 @@ export default function PackagePrice() {
       <div>
         <div className="package-price">
           <div className="package-price-symbol">€</div>
-          <div className="package-price-text">
+          <div className="package-price-text" data-testid="PackagePrice-Text">
             {formatAmount(price, { isWithoutSign: true })}
           </div>
         </div>

@@ -9,9 +9,9 @@ export const calculatePrice = (
   coverageAmount: number,
   isYearly: boolean
 ) => {
-  let price = (initialPrice || 0) - initialDiscount;
+  let price = initialPrice - initialDiscount;
   if (isYearly) {
-    price -= ((initialPrice || 0) * yearlyDiscountPercent) / 100;
+    price -= (initialPrice * yearlyDiscountPercent) / 100;
   }
 
   price += coverageAmount * (coveragePriceContributionPercent / 100);

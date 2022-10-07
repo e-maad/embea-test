@@ -15,6 +15,7 @@ export default function PackageCards() {
           className={`package-card${
             packageItem.id === selectedId ? " selected" : ""
           }`}
+          data-testid={`PackageCard-${packageItem.id}`}
         >
           <div className="package-card-header">
             <div className="package-card-heading">{packageItem.name}</div>
