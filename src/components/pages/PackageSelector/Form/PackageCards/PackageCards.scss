@@ -67,7 +67,7 @@
     &s {
       overflow: scroll;
       padding: 12px 24px;
-      width: 100vw;
+      width: calc(100vw - 48px);
       margin-left: -24px;
       margin-right: -24px;
       -ms-overflow-style: none; /* Internet Explorer 10+ */
